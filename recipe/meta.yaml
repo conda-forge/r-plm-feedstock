@@ -15,8 +15,8 @@ source:
   sha256: a2df49b3c1210fbfcaf868c67b0368c5fab9ccc6141a5460341cb5f0fabff103
 
 build:
-  number: 0
-  skip: true  # [win32]
+  noarch: generic
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
