@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About r-plm
 ===========
 
@@ -11,15 +7,22 @@ Package license: GPL (>= 2)
 
 Feedstock license: BSD 3-Clause
 
-Summary: A set of estimators and tests for panel data econometrics.
+Summary: A set of estimators and tests for panel data econometrics, as described in Baltagi (2013) Econometric Analysis of Panel Data, ISBN-13:978-1-118-67232-7, Hsiao (2014) Analysis of Panel Data  <doi:10.1017/CBO9781139839327> and Croissant and Millo (2018), Panel Data Econometrics with R, ISBN:978-1-118-94918-4.
 
 
 
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-plm-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-plm-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3433&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-plm-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
