@@ -1,4 +1,4 @@
-{% set version = '2.0-2' %}
+{% set version = '2.2-0' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/plm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/plm/plm_{{ version }}.tar.gz
-  sha256: 223967511e5ebdc83820a34f8077be9e8f3e5addea5cfbd6a7f0b207fd63890c
+  sha256: 7f038532c387d417ea0c86322d873e6a3959a061a490bc506241a95edc50c86a
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -55,21 +55,22 @@ test:
 
 about:
   home: https://cran.r-project.org/package=plm, https://r-forge.r-project.org/projects/plm/
-  license: GPL (>= 2)
+  license: GPL-2
   summary: A set of estimators and tests for panel data econometrics, as described in Baltagi
     (2013) Econometric Analysis of Panel Data, ISBN-13:978-1-118-67232-7, Hsiao (2014)
     Analysis of Panel Data  <doi:10.1017/CBO9781139839327> and Croissant and Millo (2018),
     Panel Data Econometrics with R, ISBN:978-1-118-94918-4.
-  license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_family: GPL2
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
     - conda-forge/r
 
 # Package: plm
-# Version: 2.0-2
-# Date: 2019-06-21
+# Version: 2.2-0
+# Date: 2019-09-07
 # Title: Linear Models for Panel Data
 # Authors@R: c(person(given = "Yves",      family = "Croissant",    role = c("aut", "cre"), email = "yves.croissant@univ-reunion.fr"), person(given = "Giovanni",  family = "Millo",        role = "aut", email = "Giovanni.Millo@Generali.com"), person(given = "Kevin",     family = "Tappe",        role = "aut", email = "kevin.tappe@bwi.uni-stuttgart.de"), person(given = "Ott",       family = "Toomet",       role = "ctb", email = "otoomet@gmail.com"), person(given = "Christian", family = "Kleiber",      role = "ctb", email = "Christian.Kleiber@unibas.ch"),  person(given = "Achim",     family = "Zeileis",      role = "ctb", email = "Achim.Zeileis@R-project.org"), person(given = "Arne",      family = "Henningsen",   role = "ctb", email = "arne.henningsen@googlemail.com"), person(given = "Liviu",     family = "Andronic",     role = "ctb", email = "landronimirc@gmail.com"), person(given = "Nina",      family = "Schoenfelder", role = "ctb", email = "nina.schoenfelder@fernuni-hagen.de"))
 # Depends: R (>= 3.1.0)
@@ -82,9 +83,12 @@ extra:
 # RoxygenNote: 6.1.1
 # RdMacros: Rdpack
 # Encoding: UTF-8
-# NeedsCompilation: no
-# Packaged: 2019-06-21 09:54:07 UTC; yves
 # Author: Yves Croissant [aut, cre], Giovanni Millo [aut], Kevin Tappe [aut], Ott Toomet [ctb], Christian Kleiber [ctb], Achim Zeileis [ctb], Arne Henningsen [ctb], Liviu Andronic [ctb], Nina Schoenfelder [ctb]
 # Maintainer: Yves Croissant <yves.croissant@univ-reunion.fr>
 # Repository: CRAN
-# Date/Publication: 2019-06-21 16:40:03 UTC
+# Repository/R-Forge/Project: plm
+# Repository/R-Forge/Revision: 892
+# Repository/R-Forge/DateTimeStamp: 2019-09-06 04:42:37
+# Date/Publication: 2019-09-07 07:00:06 UTC
+# NeedsCompilation: no
+# Packaged: 2019-09-06 05:15:26 UTC; rforge
