@@ -3,7 +3,7 @@ About r-plm
 
 Home: https://cran.r-project.org/package=plm, https://r-forge.r-project.org/projects/plm/
 
-Package license: GPL (>= 2)
+Package license: GPL-2
 
 Feedstock license: BSD 3-Clause
 
