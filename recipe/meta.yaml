@@ -1,4 +1,4 @@
-{% set version = "2.2-1" %}
+{% set version = "2.2-2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/plm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/plm/plm_{{ version }}.tar.gz
-  sha256: 4217fa6a564a79623e187c03ec234726ac7e95cdb4589ba51854b597d18ec181
+  sha256: cd6d074b6a76f6abc98921bf0809ced842df37f34c2afdb2ac94ba81ab6ec5eb
 
 build:
   merge_build_host: True  # [win]
