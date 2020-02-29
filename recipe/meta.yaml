@@ -1,4 +1,4 @@
-{% set version = "2.2-2" %}
+{% set version = "2.2-3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/plm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/plm/plm_{{ version }}.tar.gz
-  sha256: cd6d074b6a76f6abc98921bf0809ced842df37f34c2afdb2ac94ba81ab6ec5eb
+  sha256: 8dfaccdbf3ee4623c73d9601573ca6558fe114ad0be9bed00022d4787b697c81
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -56,13 +56,11 @@ test:
 about:
   home: https://cran.r-project.org/package=plm, https://r-forge.r-project.org/projects/plm/
   license: GPL-2
-  summary: A set of estimators and tests for panel data econometrics, as described in Baltagi
-    (2013) Econometric Analysis of Panel Data, ISBN-13:978-1-118-67232-7, Hsiao (2014)
-    Analysis of Panel Data  <doi:10.1017/CBO9781139839327> and Croissant and Millo (2018),
-    Panel Data Econometrics with R, ISBN:978-1-118-94918-4.
+  summary: A set of estimators and tests for panel data econometrics, as described in Baltagi (2013) Econometric Analysis of Panel Data, ISBN-13:978-1-118-67232-7,
+    Hsiao (2014) Analysis of Panel Data  <doi:10.1017/CBO9781139839327> and Croissant and Millo (2018), Panel Data Econometrics with R, ISBN:978-1-118-94918-4.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
