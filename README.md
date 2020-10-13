@@ -5,11 +5,9 @@ Home: https://cran.r-project.org/package=plm, https://r-forge.r-project.org/proj
 
 Package license: GPL-2
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-plm-feedstock/blob/master/LICENSE.txt)
 
 Summary: A set of estimators and tests for panel data econometrics, as described in Baltagi (2013) Econometric Analysis of Panel Data, ISBN-13:978-1-118-67232-7, Hsiao (2014) Analysis of Panel Data  <doi:10.1017/CBO9781139839327> and Croissant and Millo (2018), Panel Data Econometrics with R, ISBN:978-1-118-94918-4.
-
-
 
 Current build status
 ====================
